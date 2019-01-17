@@ -21,7 +21,7 @@ int main(){
     while(1){
         printf("1---tianjia\n");
         printf("2---shanchu\n");
-        printf("3---xianshi"\n);
+        printf("3---xianshi\n");
         printf("4---tihuan\n");
         printf("5---tuichu\n")
 
@@ -30,7 +30,16 @@ int main(){
         scanf("%d",&code);
         
         if(code == 1){
-
+          printf("shuruminganzifu\n");
+          char m;
+          scanf("%c"&m);
+          scanf("%c"&m);
+          arr[index] = m;
+          index++;
+          printf("dianjihuichejixu\n");
+          char x;
+          scanf("%c"&x);
+          scanf("%c"&x);
         }
         if(code == 1){
             
