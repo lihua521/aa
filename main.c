@@ -63,46 +63,49 @@ int main()
         {
             printf("xianshiminganzifu\n");
 
-            for(int i=0;i<index;i++){
-                printf("%c\n",arr[i]);
+            for (int i = 0; i < index; i++)
+            {
+                printf("%c\n", arr[i]);
             }
             printf("dianjihuichejixu\n");
             char x;
-            scanf("%c",&x);
-            scanf("%c",&x);
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 4)
         {
             {
-            printf("tihuan\n");
-            char neirong[1024];
-            scanf("%s", neirong);
+                printf("tihuan\n");
+                char neirong[1024];
+                scanf("%s", neirong);
 
-            for (int i = 0; 1; i++)
-            {
-                if (neirong[i] == '\0')
+                for (int i = 0; 1; i++)
                 {
-                    break;
+                    if (neirong[i] == '\0')
+                    {
+                        break;
+                    }
+
+                    if (isMingan(neirong[i]) == 1)
+                    {
+                        neirong[i] = '*';
+                    }
+
+                    printf("%c", neirong[i]);
                 }
 
-                if (isMingan(neirong[i]) == 1)
-                {
-                    neirong[i] = '*';
-                }
+                printf("\n");
 
-                printf("%c", neirong[i]);
+                printf("dianjihuiche\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
             }
-
-            printf("\n");
-
-            printf("dianjihuiche\n");
-            char x;
-            scanf("%c", &x);
-            scanf("%c", &x);
-        }
         }
         if (code == 5)
         {
+            printf("tuichu\n");
+            break;
         }
     }
 
